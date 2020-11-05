@@ -16,3 +16,26 @@ body {
   margin: 1% auto;
   border-radius: 10px;
 }
+#table {
+  width: 90%;
+  margin: auto;
+}
+#table tr td {
+  padding: 1%;
+  border: solid black;
+  width: 300px;
+  text-align: center;
+}
+
+#divsLinks {
+  margin: auto;
+}
+#divsLinks div {
+  margin: auto;
+}
+#divsLinks div a {
+  margin: 1% auto;
+  text-decoration: none;
+  padding: 1%;
+  color: yellow;
+}
