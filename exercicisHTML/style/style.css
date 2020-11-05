@@ -1,5 +1,18 @@
 body {
+  margin: 1% auto;
   color: white;
   background-color: grey;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imatgesAnimals a {
+  padding: 1%;
+}
+
+#cat,
+#dog {
+  width: 200px;
+  height: 300px;
+  margin: 1% auto;
+  border-radius: 10px;
 }
