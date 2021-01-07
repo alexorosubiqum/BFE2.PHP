@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCICIS JS 4</title>
+    <script>
+      //   var i = 0;
+      //   for (i = 0; i < jugadors.length; i++) {
+      //     document.write(jugadors[i] + "<br>");
+      //   }
+      var jugadors = [];
+
+      function afegir() {
+        var quadre = document.getElementById("jugador");
+        jugadors.push(quadre.value);
+        imprimir();
+      }
+
+      function eliminar() {
+        jugadors.shift();
+        imprimir();
+      }
+
+      function imprimir() {
+        var i = 0;
+        for (i = 0; i < jugadors.length; i++) {
+          console.log(jugadors[i]);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <label for="jugador">Jugador:</label>
+    <input type="text" id="jugador" />
+    <br />
+    <input type="button" id="buttonAfegir" value="Afegir" onclick="afegir()" />
+    <br />
+    <input
+      type="button"
+      id="buttonEliminar"
+      value="Eliminar"
+      onclick="eliminar()"
+    />
+  </body>
+</html>

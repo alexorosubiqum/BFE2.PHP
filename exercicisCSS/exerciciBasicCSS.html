@@ -1,0 +1,200 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCICI HTML</title>
+    <style>
+      h1,
+      h2 {
+        color: red;
+      }
+      i:nth-child(1),
+      i:nth-child(2) {
+        color: red;
+        font-style: normal;
+        font-weight: bold;
+      }
+      i:nth-child(3) {
+        color: red;
+      }
+
+      ul:first-child {
+        color: red;
+      }
+
+      ul > li > ul > li a {
+        color: blue;
+      }
+
+      table tr td:nth-child(1) {
+        font-weight: bold;
+      }
+      table tr td:nth-child(2) {
+        font-weight: bold;
+      }
+      .loc td {
+        border: solid 1px black;
+      }
+
+      .loc td:first-child {
+        color: blue;
+      }
+      .loc td:last-child {
+        color: red;
+      }
+      label,
+      legend {
+        color: blue;
+      }
+      input {
+        color: red;
+      }
+      input::placeholder {
+        color: red;
+      }
+      footer a:first-child {
+        color: red;
+      }
+      /* .twitter {
+        color: red;
+      } */
+
+      form input[type="button"]:last-of-type {
+        color: black;
+      }
+
+      form input[type="textarea"] {
+        resize: both;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="../exercicisHTML/assets/gitDevHeader.png"
+        alt=""
+        width="300px"
+      />
+      <h1>About</h1>
+      <p>
+        It can be intimidating for women to learn and ask questions when they
+        are in an <i>extreme minority. </i>While open and welcoming, today's
+        budding developer community is up to <i>91% male. </i>If we can empower
+        more females with the confidence in their technological capabilities
+        <i>we can begin to change this landscape</i>.
+      </p>
+    </header>
+    <main>
+      <h2>Our Locations</h2>
+      <ul>
+        <li>
+          USA
+          <ul>
+            <li>
+              <a
+                target="blank"
+                href="https://en.wikipedia.org/wiki/New_York_City"
+                >New York</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                href="https://en.wikipedia.org/wiki/Columbus,_Ohio"
+                >Columbus</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                href="https://en.wikipedia.org/wiki/Austin,_Texas"
+                >Austin</a
+              >
+            </li>
+            <li>
+              <a
+                target="blank"
+                href="https://en.wikipedia.org/wiki/Philadelphia"
+                >Philly</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          WORLD
+          <ul>
+            <li>
+              <a target="blank" href="https://en.wikipedia.org/wiki/Ottawa"
+                >Ottawa</a
+              >
+            </li>
+            <li>
+              <a target="blank" href="https://en.wikipedia.org/wiki/Sydney"
+                >Sydney</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Upcoming Classes</h2>
+      <table style="border: solid 1px black">
+        <tr>
+          <td style="border: solid 1px black" style="font-weight: bold">
+            Location
+          </td>
+          <td style="border: solid 1px black" style="font-weight: bold">
+            Topic
+          </td>
+        </tr>
+        <div>
+          <tr class="loc">
+            <td>New York</td>
+            <td>JavaScript & jQuery</td>
+          </tr>
+          <tr class="loc">
+            <td>San Francisco</td>
+            <td>HTML & CSS</td>
+          </tr>
+        </div>
+      </table>
+
+      <h2>Sing Up!</h2>
+      <form action="POST">
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Pamela Fox" />
+        <br />
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="pamela@gmail.com" />
+        <br />
+        <label for="location">Location:</label>
+        <select id="location" name="Locations">
+          <option value="San Francisco">San Francisco</option>
+          <option value="New York">New York</option>
+          <option value="Columbus">Columbus</option>
+          <option value="Philly">Philly</option>
+        </select>
+        <br />
+        <fieldset style="width: 30%">
+          <legend>Gender:</legend>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="male" id="male" />
+        </fieldset>
+        <br />
+        <label for="experience">Experience:</label>
+        <br />
+        <input style="height: 30px" type="textarea" />
+        <br />
+        <input type="button" value="Sing Up" />
+      </form>
+      <footer style="display: inline-block">
+        <a class="twitter" target="blank" href="https://twitter.com">Twitter</a
+        >| <a target="blank" href="https://www.facebook.com/">Facebook</a>|
+        <a target="blank" href="https://www.flickr.com/">Flickr</a>
+      </footer>
+    </main>
+  </body>
+</html>

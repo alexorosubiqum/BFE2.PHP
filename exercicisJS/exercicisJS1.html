@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCICIS JS 1</title>
+    <script>
+      //   function checkPass() {
+      //     var password = document.getElementById("password");
+      //     if (password.value == "patata") {
+      //       alert("Correcte");
+      //     } else {
+      //       alert("Incorrecte");
+      //     }
+      //   }
+
+      //   function checkTemp() {
+      //     var temp = document.getElementById("temperature");
+      //     if (temp.value >= 20) {
+      //       alert("Fa calor");
+      //     }
+      //     if (temp.value < 20) {
+      //       alert("Fa fred");
+      //     }
+      //   }
+
+      //   function checkTemp() {
+      //     var temp = document.getElementById("temperature");
+      //     if (temp.value >= 25) {
+      //       alert("Fa calor");
+      //     } else {
+      //       if (temp.value >= 15) {
+      //         alert("Agradable");
+      //       }
+      //       if (temp.value >= 8) {
+      //         alert("Fa fresqueta");
+      //       } else {
+      //         alert("Fa fred");
+      //       }
+      //     }
+      //   }
+      function checkNota() {
+        var nota = document.getElementById("nota");
+
+        if (nota.value == 100) {
+          alert("Excel·lent");
+        } else if (nota.value >= 70) {
+          alert("Notable");
+        } else if (nota.value >= 60) {
+          alert("Bé");
+        } else if (nota.value >= 50) {
+          alert("Suficient");
+        } else if (nota.value >= 40) {
+          alert("Insuficient");
+        }
+      }
+
+      function checkEdat() {
+        var edat = document.getElementById("edat");
+        if (edat.value >= 18 && edat.value <= 30) {
+          alert("Acceptat");
+        } else {
+          alert("Rebutjat");
+        }
+      }
+
+      function accedir() {
+        var rols = document.getElementById("rols");
+        switch (rols.value) {
+          case "admin":
+            console.log("Accés total");
+            break;
+
+          case "gestor":
+            console.log("Accés limitat");
+            break;
+
+          case "auxiliar":
+            console.log("Accés de lectura");
+            break;
+
+          default:
+            console.log("Accés denegat");
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <!-- <label for="password">Password:</label>
+      <input type="password" id="password" />
+      <input type="button" value="Check password" onclick="checkPass()" />
+      <br />
+
+      <label for="temperature">Temp:</label>
+      <input type="number" id="temperature" />
+      <input type="button" value="Check temp" onclick="checkTemp()" /> -->
+
+      <!-- <label for="nota">Nota:</label>
+      <input type="number" id="nota" />
+      <input type="button" value="Check Nota" onclick="checkNota()" />
+      <br />
+      <label for="edat">Edat:</label>
+      <input type="number" id="edat" />
+      <input type="button" value="Check Edat" onclick="checkEdat()" /> -->
+
+      <label for="rol">Rol: </label>
+      <select name="rol" id="rols">
+        <option value="admin">Admin</option>
+        <option value="gestor">Gestor</option>
+        <option value="auxiliar">Auxiliar</option>
+      </select>
+      <input type="button" value="Accedir" onclick="accedir()" />
+    </form>
+  </body>
+</html>

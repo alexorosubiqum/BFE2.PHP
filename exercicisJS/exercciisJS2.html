@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCICIS JS 2</title>
+    <script>
+      function changeColor(colorLletra) {
+        var titol = document.getElementById("titol");
+        var contingut = document.getElementById("contingut");
+        var flor = document.getElementById("redFlower");
+        titol.style.color = colorLletra;
+        contingut.style.color = colorLletra;
+        if (colorLletra == "red") {
+          flor.src = "./assets/redFlower.jpg";
+        }
+        if (colorLletra == "blue") {
+          flor.src = "./assets/blueFlower.jpg";
+        }
+      }
+      function restart() {
+        var titol = document.getElementById("titol");
+        var contingut = document.getElementById("contingut");
+        var flor = document.getElementById("redFlower");
+        delete titol.color;
+        delete contingut.color;
+        delete flor.src;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="titol">EXERCICIS JS 2</h1>
+    <p id="contingut">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis quidem
+      facilis cupiditate doloribus corporis dolores praesentium eligendi et.
+      Labore optio cum hic ex reprehenderit. Rem maiores aliquam delectus vitae!
+    </p>
+
+    <input
+      type="button"
+      value="Vermell"
+      id="vermell"
+      onclick="changeColor('red')"
+    />
+    <input type="button" value="Blau" id="blau" onclick="changeColor('blue')" />
+    <br />
+    <img src="" id="redFlower" />
+    <img src="" id="blueFlower" />
+    <br />
+    <input type="button" value="Restart" onclick="restart()" />
+  </body>
+</html>

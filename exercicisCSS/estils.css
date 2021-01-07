@@ -1,0 +1,20 @@
+h1 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+.destacat {
+  font-size: 18px;
+  color: green;
+}
+
+#conclusio {
+  font-weight: bold;
+}
+
+i .destacat {
+  color: blueviolet;
+}

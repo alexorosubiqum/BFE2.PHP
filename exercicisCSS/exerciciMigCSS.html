@@ -1,0 +1,216 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCICI HTML</title>
+    <style>
+      body {
+        background-color: rgba(244, 223, 227, 255);
+        background-image: url(./assets/background01.png);
+        background-position: bottom;
+        background-repeat: repeat-x;
+      }
+      .container {
+        background-color: white;
+        width: 60%;
+        margin: 0 auto;
+        padding: 1%;
+        border-bottom: 10px solid rgba(245, 92, 92, 255);
+      }
+
+      .gitDevHeader {
+        margin: 0 auto;
+        width: 40%;
+        display: block;
+      }
+      h1,
+      h2 {
+        color: rgba(245, 92, 92, 255);
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      i:nth-child(1) {
+        font-size: large;
+        font-weight: bold;
+        text-decoration: underline;
+        font-style: normal;
+      }
+      i:nth-child(2) {
+        font-size: large;
+        font-weight: bold;
+        text-decoration: underline;
+        font-style: normal;
+      }
+      i:last-child {
+        text-decoration: underline;
+        font-size: large;
+      }
+      .lt {
+        font-weight: bold;
+      }
+      .loc td {
+        border: solid 1px black;
+      }
+      .projects {
+        border: 1px solid rgba(245, 92, 92, 255);
+        width: 25%;
+        padding: 1%;
+        background-color: rgba(244, 223, 227, 255);
+        float: right;
+      }
+
+      input::placeholder {
+        background-color: rgba(244, 223, 227, 255);
+      }
+      fieldset {
+        width: 70%;
+      }
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          class="gitDevHeader"
+          src="../exercicisHTML/assets/gitDevHeader.png"
+          alt=""
+          width="300px"
+        />
+        <h1>About</h1>
+        <p>
+          It can be intimidating for women to learn and ask questions when they
+          are in an <i>extreme minority. </i>While open and welcoming, today's
+          budding developer community is up to <i>91% male. </i>If we can
+          empower more females with the confidence in their technological
+          capabilities <i>we can begin to change this landscape</i>.
+        </p>
+      </header>
+      <main>
+        <div class="projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>
+              USA
+              <ul>
+                <li>
+                  <a
+                    target="blank"
+                    href="https://en.wikipedia.org/wiki/New_York_City"
+                    >New York</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="blank"
+                    href="https://en.wikipedia.org/wiki/Columbus,_Ohio"
+                    >Columbus</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="blank"
+                    href="https://en.wikipedia.org/wiki/Austin,_Texas"
+                    >Austin</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="blank"
+                    href="https://en.wikipedia.org/wiki/Philadelphia"
+                    >Philly</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              WORLD
+              <ul>
+                <li>
+                  <a target="blank" href="https://en.wikipedia.org/wiki/Ottawa"
+                    >Ottawa</a
+                  >
+                </li>
+                <li>
+                  <a target="blank" href="https://en.wikipedia.org/wiki/Sydney"
+                    >Sydney</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <h2>Upcoming Classes</h2>
+        <table style="border: solid 1px black">
+          <tr>
+            <td
+              class="lt"
+              style="border: solid 1px black"
+              style="font-weight: bold"
+            >
+              Location
+            </td>
+            <td
+              class="lt"
+              style="border: solid 1px black"
+              style="font-weight: bold"
+            >
+              Topic
+            </td>
+          </tr>
+          <div>
+            <tr class="loc">
+              <td>New York</td>
+              <td>JavaScript & jQuery</td>
+            </tr>
+            <tr class="loc">
+              <td>San Francisco</td>
+              <td>HTML & CSS</td>
+            </tr>
+          </div>
+        </table>
+
+        <h2>Sing Up!</h2>
+        <form action="POST">
+          <label for="name">Name:</label>
+          <input id="name" type="text" placeholder="Pamela Fox" />
+          <br />
+          <label for="email">Email:</label>
+          <input id="email" type="email" placeholder="pamela@gmail.com" />
+          <br />
+          <label for="location">Location:</label>
+          <select id="location" name="Locations">
+            <option value="San Francisco">San Francisco</option>
+            <option value="New York">New York</option>
+            <option value="Columbus">Columbus</option>
+            <option value="Philly">Philly</option>
+          </select>
+          <br />
+          <fieldset>
+            <legend>Gender:</legend>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male" />
+          </fieldset>
+          <br />
+          <label for="experience">Experience:</label>
+          <br />
+          <input style="height: 30px" type="textarea" />
+          <br />
+          <input type="button" value="Sing Up" />
+        </form>
+        <footer>
+          <a class="twitter" target="blank" href="https://twitter.com"
+            >Twitter</a
+          >| <a target="blank" href="https://www.facebook.com/">Facebook</a>|
+          <a target="blank" href="https://www.flickr.com/">Flickr</a>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

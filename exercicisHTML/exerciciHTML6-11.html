@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXERCICI HTML</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/gitDevHeader.png" alt="" width="300px" />
+      <h1>About</h1>
+      <p></p>
+    </header>
+    <main>
+      <h2>Our Locations</h2>
+      <ul>
+        <li>
+          <a target="blank" href="https://en.wikipedia.org/wiki/New_York_City"
+            >New York</a
+          >
+        </li>
+        <li>
+          <a target="blank" href="https://en.wikipedia.org/wiki/Columbus,_Ohio"
+            >Columbus</a
+          >
+        </li>
+        <li>
+          <a target="blank" href="https://en.wikipedia.org/wiki/Austin,_Texas"
+            >Austin</a
+          >
+        </li>
+        <li>
+          <a target="blank" href="https://en.wikipedia.org/wiki/Philadelphia"
+            >Philly</a
+          >
+        </li>
+      </ul>
+
+      <h2>Upcoming Classes</h2>
+      <table style="border: solid 1px black">
+        <tr>
+          <td style="border: solid 1px black" style="font-weight: bold">
+            Location
+          </td>
+          <td style="border: solid 1px black" style="font-weight: bold">
+            Topic
+          </td>
+        </tr>
+        <tr>
+          <td style="border: solid 1px black">New York</td>
+          <td style="border: solid 1px black">JavaScript & jQuery</td>
+        </tr>
+        <tr>
+          <td style="border: solid 1px black">San Francisco</td>
+          <td style="border: solid 1px black">HTML & CSS</td>
+        </tr>
+      </table>
+
+      <h2>Sing Up!</h2>
+      <form action="POST">
+        <label for="name">Name:</label>
+        <input id="name" type="text" />
+        <br />
+        <label for="email">Email:</label>
+        <input id="email" type="email" />
+        <br />
+        <label for="location">Location:</label>
+        <select id="location" name="Locations">
+          <option value="San Francisco">San Francisco</option>
+          <option value="New York">New York</option>
+          <option value="Columbus">Columbus</option>
+          <option value="Philly">Philly</option>
+        </select>
+        <br />
+        <fieldset style="width: 30%">
+          <legend>Gender:</legend>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="male" id="male" />
+        </fieldset>
+        <br />
+        <label for="experience">Experience:</label>
+        <br />
+        <input style="height: 30px" type="textarea" />
+        <br />
+        <input type="button" value="Sing Up" />
+      </form>
+      <footer style="display: inline-block">
+        <a target="blank" href="https://twitter.com">Twitter</a>|
+        <a target="blank" href="https://www.facebook.com/">Facebook</a>|
+        <a target="blank" href="https://www.flickr.com/">Flickr</a>
+      </footer>
+    </main>
+  </body>
+</html>
